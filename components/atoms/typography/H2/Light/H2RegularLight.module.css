@@ -1,0 +1,8 @@
+.h2 {
+  font-family: "HelveticaNeueLTStd-LtIt", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: calc(var(--dPx) * 18);
+  line-height: 132%;
+  letter-spacing: -0.006em;
+}

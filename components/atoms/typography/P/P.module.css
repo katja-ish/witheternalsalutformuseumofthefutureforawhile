@@ -1,0 +1,6 @@
+.p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(var(--dPx) * 24);
+  line-height: 112%;
+}

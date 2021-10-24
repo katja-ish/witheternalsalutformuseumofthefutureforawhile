@@ -1,0 +1,19 @@
+.container {
+  padding: calc(var(--dPx) * 20) calc(var(--dPx) * 32) calc(var(--dPx) * 0);
+  background: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 1111;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.border {
+  margin-top: calc(var(--dPx) * 20);
+  height: 1px;
+  width: 100%;
+  background: var(--black);
+}

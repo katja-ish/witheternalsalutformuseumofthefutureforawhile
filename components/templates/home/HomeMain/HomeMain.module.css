@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  margin: 10rem 0 1rem;
+}
+
+.paragraphWrapper {
+  width: 52vw;
+  margin-bottom: 2rem;
+}

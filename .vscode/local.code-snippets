@@ -1,0 +1,7 @@
+{
+  "dPx": {
+    "prefix": "dPx",
+    "body": ["calc(var(--dPx) * ${0})"],
+    "description": "Desktop pixel shortcut"
+  }
+}
