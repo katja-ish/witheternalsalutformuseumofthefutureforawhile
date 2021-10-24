@@ -3,5 +3,23 @@
     "prefix": "dPx",
     "body": ["calc(var(--dPx) * ${0})"],
     "description": "Desktop pixel shortcut"
+  },
+
+  "mPx": {
+    "prefix": "mPx",
+    "body": ["calc(var(--mPx) * ${0})"],
+    "description": "Mobile pixel shortcut"
+  },
+
+  "429": {
+    "prefix": "429",
+    "body": ["@media screen and (min-width: 429px) { $0 }"],
+    "description": "Mobile breakpoint shortcut"
+  },
+
+  "with": {
+    "prefix": "with",
+    "body": ["witheternalsalutformuseumofthefutureforawhile"],
+    "description": "with eternal salut for museum of the future for a while"
   }
 }

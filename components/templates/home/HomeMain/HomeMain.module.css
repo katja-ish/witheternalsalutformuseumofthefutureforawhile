@@ -1,13 +1,22 @@
 .container {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  width: 100vw;
-  margin: 10rem 0 1rem;
+  margin: 8rem 1rem;
+}
+@media screen and (min-width: 429px) {
+  .container {
+    align-items: flex-end;
+    width: 100vw;
+    margin: 10rem 0 1rem;
+  }
 }
 
 .paragraphWrapper {
-  width: 52vw;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 429px) {
+  .paragraphWrapper {
+    width: 52vw;
+  }
 }
