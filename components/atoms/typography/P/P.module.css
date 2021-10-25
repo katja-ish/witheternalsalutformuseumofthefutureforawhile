@@ -3,9 +3,10 @@
   font-weight: normal;
   font-size: calc(var(--mPx) * 18);
   line-height: 112%;
+  text-transform: lowercase;
 }
 @media screen and (min-width: 429px) {
   .p {
-    font-size: calc(var(--dPx) * 24);
+    font-size: calc(var(--dPx) * 20);
   }
 }
