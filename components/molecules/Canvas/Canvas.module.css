@@ -1,0 +1,27 @@
+.btn {
+  border: none;
+  background: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(var(--mPx) * 14);
+  line-height: 112%;
+  text-transform: lowercase;
+  position: fixed;
+  right: 0.5rem;
+  top: 0.5rem;
+  cursor: pointer;
+}
+@media screen and (min-width: 429px) {
+  .btn {
+    font-size: calc(var(--dPx) * 14);
+  }
+}
+
+.btn:hover {
+  color: #fe2222;
+}
+
+.btnDownload {
+  left: 0.5rem;
+  top: 0.5rem;
+}

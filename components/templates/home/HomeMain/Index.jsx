@@ -1,14 +1,7 @@
-import P from "../../../atoms/typography/P/Index";
-import styles from "./HomeMain.module.css";
+import Canvas from "../../../molecules/Canvas/Index";
 
 const HomeMain = () => {
-  return (
-    <div className={styles.container}>
-      <div className={styles.paragraphWrapper}>
-        <P text={"(tbc)"} />
-      </div>
-    </div>
-  );
+  return <Canvas />;
 };
 
 export default HomeMain;
