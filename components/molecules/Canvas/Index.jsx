@@ -22,8 +22,11 @@ const Canvas = () => {
     contextRef.current = context;
   }, []);
 
+  const mobileFlower = ({ nativeEvent }) => {
+    const { offsetX, offsetY } = nativeEvent;
+  };
+
   const startDrawing = ({ nativeEvent }) => {
-    console.log("startDrawing");
     const { offsetX, offsetY } = nativeEvent;
     contextRef.current.beginPath();
     contextRef.current.moveTo(offsetX, offsetY);
@@ -31,7 +34,6 @@ const Canvas = () => {
   };
 
   const finishDrawing = () => {
-    console.log("finishDrawing");
     contextRef.current.closePath();
     setIsDrawing(false);
   };
@@ -58,17 +60,15 @@ const Canvas = () => {
     const dataUrl = canvasRef.current.toDataURL();
     let button = document.getElementById("downloadBtn");
     button.href = dataUrl;
+    button.download = `${dataUrl.charAt(
+      Math.floor(Math.random() * dataUrl.length)
+    )}-you-re-beautiful-human-being-${Math.random()}.jpg`;
   };
 
   return (
     <>
-      <a className={styles.btn} onClick={clean}>
-        Clear me
-      </a>
-
       <a
         className={[styles.btnDownload, styles.btn].join(" ")}
-        download="hello.jpg"
         href=""
         id="downloadBtn"
         onClick={download}
@@ -76,10 +76,17 @@ const Canvas = () => {
         Download
       </a>
 
+      <a className={styles.btn} onClick={clean}>
+        Clear
+      </a>
+
       <canvas
         onMouseDown={startDrawing}
         onMouseUp={finishDrawing}
         onMouseMove={draw}
+        onTouchStart={startDrawing}
+        onTouchEnd={finishDrawing}
+        onTouchMove={draw}
         ref={canvasRef}
       />
     </>
